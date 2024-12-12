@@ -1,6 +1,8 @@
 import Home from '@/components/HomePage';
 import Hero from '../components/HeroBanner'; 
-import client from '@/lib/contentful'; 
+import client from '@/lib/contentful';
+import { useRouter } from 'next/router';
+
 
 const Main = ({ homePage, heroBanner }) => {
   const { locale, asPath, push } = useRouter();
